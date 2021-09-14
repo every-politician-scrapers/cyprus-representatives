@@ -1,0 +1,13 @@
+ordinal,item,itemLabel,inception,inceptionPrecision,startTime,startTimePrecision,abolished,abolishedPrecision,endTime,endTimePrecision,replaces,replacesLabel,replacedBy,replacedByLabel,follows,followsLabel,followedBy,followedByLabel
+1,Q65561664,1st Cypriot Parliament,,,1960-08-16T00:00:00Z,11,,,1970-07-15T00:00:00Z,11,,,Q65561665,2nd Cypriot Parliament,,,,
+2,Q65561665,2nd Cypriot Parliament,,,1970-07-16T00:00:00Z,11,,,1976-09-19T00:00:00Z,11,Q65561664,1st Cypriot Parliament,Q65561667,3rd Cypriot Parliament,,,,
+3,Q65561667,3rd Cypriot Parliament,,,1976-09-20T00:00:00Z,11,,,1981-06-03T00:00:00Z,11,Q65561665,2nd Cypriot Parliament,Q65035115,4th Cypriot Parliament,,,,
+4,Q65035115,4th Cypriot Parliament,,,1981-06-04T00:00:00Z,11,,,1985-12-12T00:00:00Z,11,Q65561667,3rd Cypriot Parliament,Q64864930,5th Cypriot Parliament,,,,
+5,Q64864930,5th Cypriot Parliament,,,1985-12-12T00:00:00Z,11,,,1991-05-29T00:00:00Z,11,Q65035115,4th Cypriot Parliament,Q64864913,6th Cypriot Parliament,,,,
+6,Q64864913,6th Cypriot Parliament,,,1991-05-30T00:00:00Z,11,,,1996-06-05T00:00:00Z,11,Q64864930,5th Cypriot Parliament,Q64864931,7th Cypriot Parliament,,,,
+7,Q64864931,7th Cypriot Parliament,,,1996-06-06T00:00:00Z,11,,,2001-06-06T00:00:00Z,11,Q64864913,6th Cypriot Parliament,Q64864941,8th Cypriot Parliament,,,,
+8,Q64864941,8th Cypriot Parliament,,,2001-06-07T00:00:00Z,11,,,2006-05-31T00:00:00Z,11,Q64864931,7th Cypriot Parliament,Q64864942,9th Cypriot Parliament,,,,
+9,Q64864942,9th Cypriot Parliament,,,2006-06-01T00:00:00Z,11,,,2011-06-01T00:00:00Z,11,Q64864941,8th Cypriot Parliament,Q64918229,10th Cypriot Parliament,,,,
+10,Q64918229,10th Cypriot Parliament,,,2011-06-02T00:00:00Z,11,,,2016-06-01T00:00:00Z,11,Q64864942,9th Cypriot Parliament,Q64918130,11th Cypriot Parliament,,,,
+11,Q64918130,11th Cypriot Parliament,,,2016-06-02T00:00:00Z,11,,,2021-05-31T00:00:00Z,11,Q64918229,10th Cypriot Parliament,Q107003549,12th Cypriot Parliament,,,,
+12,Q107003549,12th Cypriot Parliament,,,2021-06-01T00:00:00Z,11,,,,,Q64918130,11th Cypriot Parliament,,,,,,
