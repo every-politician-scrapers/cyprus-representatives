@@ -1,0 +1,23 @@
+{
+    "jurisdiction": {
+      "name": "Cyprus",
+      "id": "Q229"
+    },
+    "legislature": {
+      "id": "Q1112381",
+      "member": "Q19801674",
+      "term": {
+        "id": "Q107003549",
+        "start": "2021-06-01"
+      }
+    },
+    "source": {
+        "url":   "http://www.parliament.cy/en/composition/members-of-the-house/biographical-notes",
+        "title": "House of Representatives - Biographical notes",
+        "lang":  {
+            "code": "en",
+            "wikidata": "Q1860"
+        }
+    },
+    "agent": "every-politican-scrapers/cyprus-representatives"
+}
