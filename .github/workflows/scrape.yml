@@ -22,9 +22,9 @@ jobs:
     - name: Scrape Wikipedia
       run: bundle exec ruby bin/scraper/wikipedia.rb | ifne tee data/wikipedia.csv
     - name: Generate diff vs official site
-      run: bundle exec ruby bin/diff.rb | tee data/diff.csv
+      run: bundle exec ruby bin/diff.rb | ifne tee data/diff.csv
     - name: Generate diff vs wikipedia
-      run: bundle exec ruby bin/wpdiff.rb | tee data/wpdiff.csv
+      run: bundle exec ruby bin/wpdiff.rb | ifne tee data/wpdiff.csv
     - name: Create pull request
       id: cpr
       uses: peter-evans/create-pull-request@v3
