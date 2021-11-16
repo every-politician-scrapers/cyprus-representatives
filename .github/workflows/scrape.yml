@@ -25,7 +25,7 @@ jobs:
     - name: Scrape official site (mirrored earlier)
       run: bundle exec ruby bin/scraper/official.rb | ifne tee data/official.csv
     - name: Get current Wikidata list
-      run: wd sparql -f csv wikidata/current-members.js | sed -e 's/T00:00:00Z//g' | qsv dedup -s psid | ifne tee wikidata/results/current-members.csv
+      run: wd sparql -f csv wikidata/current-members.js > /tmp/QS && sed -e 's#http://www.wikidata.org/entity/##g' -e 's/T00:00:00Z//g' /tmp/QS | qsv dedup -s psid | ifne tee wikidata/results/current-members.csv
     - name: Generate diff vs official site
       run: bundle exec ruby bin/diff.rb | ifne tee data/diff.csv
     - name: Scrape Wikipedia
