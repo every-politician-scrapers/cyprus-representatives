@@ -18,6 +18,7 @@ module.exports = function () {
         ?statement prov:wasDerivedFrom ?ref .
         ?ref pr:P854 ?source FILTER CONTAINS(STR(?source), '${meta.source.url}')
         OPTIONAL { ?ref pr:P1810 ?sourceName }
+        OPTIONAL { ?ref pr:P813 ?sourceDate  }
       }
       OPTIONAL { ?item rdfs:label ?wdLabel FILTER(LANG(?wdLabel) = "${meta.source.lang.code}") }
       BIND(COALESCE(?sourceName, ?wdLabel) AS ?name)
@@ -37,5 +38,5 @@ module.exports = function () {
       }
     }
     # ${new Date().toISOString()}
-    ORDER BY ?item`
+    ORDER BY ?wdLabel ?sourceDate`
 }
