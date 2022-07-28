@@ -30,10 +30,6 @@ jobs:
       run: wd sparql -f csv wikidata/current-members.js > /tmp/QS && sed -e 's#http://www.wikidata.org/entity/##g' -e 's/T00:00:00Z//g' /tmp/QS | qsv dedup -s psid | ifne tee wikidata/results/current-members.csv
     - name: Generate diff vs official site
       run: bundle exec ruby bin/diff.rb | ifne tee data/diff.csv
-    - name: Scrape Wikipedia
-      run: bundle exec ruby bin/scraper/wikipedia.rb | ifne tee data/wikipedia.csv
-    - name: Generate diff vs wikipedia
-      run: bundle exec ruby bin/wpdiff.rb | ifne tee data/wpdiff.csv
     - name: Create pull request
       id: cpr
       uses: peter-evans/create-pull-request@v3
